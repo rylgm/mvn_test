@@ -20,7 +20,7 @@ pipeline{
 					output_file = env.WORKSPACE + "/test/data/new_json.json"
 					model_test.write_json_to_file(json_file, output_file)
 					println "============================================="
-					json_string = '{"NAME": "Tom", "AGE":18, "CITY": "Beijing"}'
+					json_string = '{"NAME": "Tom", "AGE": 18, "CITY": "Beijing"}'
 					tojson_file = env.WORKSPACE + "/testdata/new_json1.json"
 					model_test.write_json_to_file(json_string, tojson_file)
 				}
