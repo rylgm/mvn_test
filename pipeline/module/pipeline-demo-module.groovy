@@ -29,7 +29,7 @@ def write_json_to_file(input_json, output_path){
 		input = readJSON file : input_json
 	}else{
 		def jsonOutput = new JsonOutput()
-		def new_json_object = jsonOutput.toJSon(input_json)
+		def new_json_object = jsonOutput.toJson(input_json)
 		input = new_json_object
 	}
 	writeJSON file : output_path, json: input
