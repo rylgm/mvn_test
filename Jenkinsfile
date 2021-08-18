@@ -13,7 +13,7 @@ pipeline{
 				}
 			}
 		}
-		stages("Parse json"){
+		stage("Parse json"){
 			steps{
 				script{
 					json_file = env.WORKSPACE + "/testdata/test_json.json"

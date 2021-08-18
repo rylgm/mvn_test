@@ -1,5 +1,4 @@
-import hudson.model.*
-import sun.util.resources.cldr.nyn.CalendarData_nyn_UG;
+import hudson.model.*;
 
 println env.JOB_NAME
 println env.BUILD_NUMBER
@@ -14,7 +13,7 @@ pipeline{
 				}
 			}
 		}
-		stages("Parse json"){
+		stage("Parse json"){
 			steps{
 				script{
 					json_file = env.WORKSPACE + "/testdata/test_json.json"
