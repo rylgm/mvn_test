@@ -28,7 +28,7 @@ def write_json_to_file(input_json, output_path){
 	if (input_json.toString().endsWith(".json")){
 		input = readJSON file : input_json
 	}else{
-		def jsonOutput = new JsonOutout()
+		def jsonOutput = new JsonOutput()
 		def new_json_object = jsonOutput.toJSon(input_json)
 		input = new_json_object
 	}
